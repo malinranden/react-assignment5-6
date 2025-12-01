@@ -17,6 +17,9 @@ function API () {
     const generateDog = () => {
         fetchData();
     }
+
+    const [count, setCount] = useState(0);
+    const [countNo, setCountNo] = useState(0);
     return (
         <>
             <div>
@@ -25,6 +28,11 @@ function API () {
                 <br />
                 <img className="dog-img" src={dog.message} alt="dog" />
                 <br />
+                <p>Did you like this picture?</p>
+                <button onClick={() => setCount((c) => c + 1)}>yes</button>
+                <button onClick={() => setCountNo((c) => c + 1)}>no</button>
+                <p>Yes: {count}</p>
+                <p>No: {countNo}</p>
             </div>
         </>
     );
