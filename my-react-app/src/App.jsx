@@ -1,7 +1,8 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-//import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from './pages/Home.jsx'
 import Assignment5 from './pages/Assignment5.jsx'
 import Assignment6 from './pages/Assignment6.jsx'
+import Navbar from './components/Navbar.jsx'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
